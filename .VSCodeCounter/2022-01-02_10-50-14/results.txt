@@ -1,0 +1,44 @@
+Date : 2022-01-02 10:50:14
+Directory : g:\Projects\gamestate-main
+Total : 14 files,  760 codes, 5 comments, 169 blanks, all 934 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         11 |        396 |          5 |        166 |        567 |
+| XML      |          2 |        284 |          0 |          2 |        286 |
+| CSV      |          1 |         80 |          0 |          1 |         81 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                              | files      | code       | comment    | blank      | total      |
++---------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                 |         14 |        760 |          5 |        169 |        934 |
+| entites                                           |          2 |         95 |          4 |         32 |        131 |
+| levels                                            |          6 |        419 |          0 |         21 |        440 |
+| states                                            |          3 |         90 |          0 |         47 |        137 |
+| ui                                                |          1 |        115 |          1 |         51 |        167 |
++---------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                          | language | code       | comment    | blank      | total      |
++---------------------------------------------------+----------+------------+------------+------------+------------+
+| g:\Projects\gamestate-main\constants.py           | Python   |          3 |          0 |          2 |          5 |
+| g:\Projects\gamestate-main\entites\player.py      | Python   |         52 |          2 |         16 |         70 |
+| g:\Projects\gamestate-main\entites\spritesheet.py | Python   |         43 |          2 |         16 |         61 |
+| g:\Projects\gamestate-main\levels\__init__.py     | Python   |          0 |          0 |          1 |          1 |
+| g:\Projects\gamestate-main\levels\camera.py       | Python   |         11 |          0 |          6 |         17 |
+| g:\Projects\gamestate-main\levels\house.tmx       | XML      |         92 |          0 |          1 |         93 |
+| g:\Projects\gamestate-main\levels\loader.py       | Python   |         44 |          0 |         11 |         55 |
+| g:\Projects\gamestate-main\levels\village..csv    | CSV      |         80 |          0 |          1 |         81 |
+| g:\Projects\gamestate-main\levels\village.tmx     | XML      |        192 |          0 |          1 |        193 |
+| g:\Projects\gamestate-main\main.py                | Python   |         38 |          0 |         16 |         54 |
+| g:\Projects\gamestate-main\states\game.py         | Python   |         51 |          0 |         26 |         77 |
+| g:\Projects\gamestate-main\states\menu.py         | Python   |         30 |          0 |         17 |         47 |
+| g:\Projects\gamestate-main\states\state.py        | Python   |          9 |          0 |          4 |         13 |
+| g:\Projects\gamestate-main\ui\gui.py              | Python   |        115 |          1 |         51 |        167 |
+| Total                                             |          |        760 |          5 |        169 |        934 |
++---------------------------------------------------+----------+------------+------------+------------+------------+

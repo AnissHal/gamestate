@@ -1,0 +1,16 @@
+"filename", "language", "Python", "XML", "CSV", "comment", "blank", "total"
+"g:\Projects\gamestate-main\constants.py", "Python", 3, 0, 0, 0, 2, 5
+"g:\Projects\gamestate-main\entites\player.py", "Python", 56, 0, 0, 2, 18, 76
+"g:\Projects\gamestate-main\entites\spritesheet.py", "Python", 43, 0, 0, 2, 16, 61
+"g:\Projects\gamestate-main\levels\__init__.py", "Python", 0, 0, 0, 0, 1, 1
+"g:\Projects\gamestate-main\levels\camera.py", "Python", 10, 0, 0, 0, 6, 16
+"g:\Projects\gamestate-main\levels\house.tmx", "XML", 0, 101, 0, 0, 1, 102
+"g:\Projects\gamestate-main\levels\loader.py", "Python", 82, 0, 0, 0, 16, 98
+"g:\Projects\gamestate-main\levels\village..csv", "CSV", 0, 0, 80, 0, 1, 81
+"g:\Projects\gamestate-main\levels\village.tmx", "XML", 0, 196, 0, 0, 1, 197
+"g:\Projects\gamestate-main\main.py", "Python", 38, 0, 0, 0, 16, 54
+"g:\Projects\gamestate-main\states\game.py", "Python", 49, 0, 0, 0, 25, 74
+"g:\Projects\gamestate-main\states\menu.py", "Python", 30, 0, 0, 0, 17, 47
+"g:\Projects\gamestate-main\states\state.py", "Python", 9, 0, 0, 0, 4, 13
+"g:\Projects\gamestate-main\ui\gui.py", "Python", 119, 0, 0, 1, 49, 169
+"Total", "-", 439, 297, 80, 5, 173, 994
