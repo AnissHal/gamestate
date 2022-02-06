@@ -1,13 +1,15 @@
-from typing import List
+from typing import Dict
+
+from states.state import State
 from .menu import MenuState
 from .game import GameState
 
 
 class GameContext():
     def __init__(self, game):
-        self.actives = {}
+        self.actives: Dict[State] = {}
 
-        self.states = {
+        self.states: Dict[State] = {
             'menu': MenuState(game, self),
             'game': GameState(game, self)
         }
@@ -15,14 +17,16 @@ class GameContext():
         self.replace('game')
 
     def update(self, delta):
-        for state in self.actives.values():
+        for state in list(self.actives.values()):
             if state.running:
                 state.update(delta)
                 state.fixed(delta)
 
     def events(self, e):
-        for state in self.actives.values():
-            if state.running:
+        for state in list(self.actives.values()):
+            if not state.running:
+                state.paused(e)
+            else:
                 state.events(e)
 
     def _set(self, state):
@@ -50,14 +54,14 @@ class GameContext():
 
     def enable(self, state):
         if state in self.actives:
-            self.actives[state].running = True
+            self.actives[state].resume()
 
     def disable(self, state):
         if state in self.actives:
-            self.actives[state].running = False
+            self.actives[state].pause()
 
     def toggle(self, state):
-        print(self.actives)
+        print('run')
         if state in self.actives.keys():
             if self.actives[state].running == False:
                 self.enable(state)
@@ -65,7 +69,9 @@ class GameContext():
                 self.disable(state)
         else:
             self.actives[state] = self.states[state]
-            self.toggle(state)
 
     def get_active_states(self):
-        return self.actives
+        status = {}
+        for key, value in self.actives.items():
+            status[key] = value.running
+        return status

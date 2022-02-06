@@ -35,6 +35,9 @@ class Game:
             if e.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
+            if e.type == pygame.KEYUP:
+                if e.key == pygame.K_s:
+                    print(self.context.get_active_states())
 
             self.context.events(e)
 

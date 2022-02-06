@@ -12,7 +12,8 @@ class MenuState(State):
         self.display: pygame.Surface = game.display
         self.context = context
 
-        self.surface = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
+        self.surface = pygame.Surface(
+            (WINDOW_WIDTH, WINDOW_HEIGHT), pygame.SRCALPHA)
         self.ui = pygame.Surface(
             (WINDOW_WIDTH, WINDOW_HEIGHT), pygame.SRCALPHA)
 
@@ -40,7 +41,7 @@ class MenuState(State):
         self.running = True
 
     def update(self, delta):
-        self.surface.fill(pygame.Color('white'))
+        self.surface.fill(pygame.Color(255, 255, 255, 0))
 
         self.manager.render()
 
@@ -54,7 +55,12 @@ class MenuState(State):
 
     def events(self, e):
         self.manager.events(e)
-        if e.type == pygame.KEYUP:
-            if e.key == pygame.K_ESCAPE:
-                print('f')
-                self.context.toggle('menu')
+
+    def paused(self, e):
+        pass
+
+    def pause(self):
+        self.running = False
+
+    def resume(self):
+        self.running = True

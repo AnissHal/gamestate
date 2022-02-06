@@ -75,4 +75,17 @@ class GameState(State):
             if e.key == pygame.K_p:
                 self.debug_mode = True if self.debug_mode == False else False
             if e.key == pygame.K_ESCAPE:
-                self.context.toggle('game')
+                self.pause()
+                self.context.toggle('menu')
+
+    def paused(self, e):
+        if e.type == pygame.KEYUP:
+            if e.key == pygame.K_ESCAPE:
+                self.context.toggle('menu')
+                self.resume()
+
+    def pause(self):
+        self.running = False
+
+    def resume(self):
+        self.running = True
